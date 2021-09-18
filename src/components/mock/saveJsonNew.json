@@ -1,0 +1,135 @@
+{
+    "childShapes": [{
+            "incoming": [],
+            "outgoing": [
+                "Flow_3nat3ri"
+            ],
+            "dockers": [],
+            "type": 2,
+            "properties": {
+                "ceshi": "这里是属性",
+                "name": "开始",
+                "x": 360,
+                "y": 240,
+                "text": {
+                    "x": 360,
+                    "y": 240,
+                    "value": "开始"
+                },
+                "logicFlowType": "bpmn:startEvent"
+            },
+            "key": "Event_2oforpn"
+        },
+        {
+            "incoming": [
+                "Flow_3nat3ri"
+            ],
+            "outgoing": [
+                "Flow_0v8uokn"
+            ],
+            "dockers": [],
+            "type": 4,
+            "properties": {
+                "ceshi": "这里是属性",
+                "name": "测试1",
+                "x": 540,
+                "y": 240,
+                "text": {
+                    "x": 540,
+                    "y": 240,
+                    "value": "测试1"
+                },
+                "logicFlowType": "bpmn:userTask"
+            },
+            "key": "Activity_3tq5fvu"
+        },
+        {
+            "incoming": [
+                "Flow_0v8uokn"
+            ],
+            "outgoing": [],
+            "dockers": [],
+            "type": 3,
+            "properties": {
+                "ceshi": "这里是属性",
+                "name": "结束",
+                "x": 800,
+                "y": 240,
+                "text": {
+                    "x": 800,
+                    "y": 240,
+                    "value": "结束"
+                },
+                "logicFlowType": "bpmn:endEvent"
+            },
+            "key": "Event_34jflja"
+        },
+        {
+            "incoming": [
+                "Event_2oforpn"
+            ],
+            "outgoing": [
+                "Activity_3tq5fvu"
+            ],
+            "type": 1,
+            "dockers": [],
+            "properties": {
+                "name": "",
+                "text": "",
+                "startPoint": {
+                    "x": 380,
+                    "y": 240
+                },
+                "endPoint": {
+                    "x": 490,
+                    "y": 240
+                },
+                "pointsList": [{
+                        "x": 380,
+                        "y": 240
+                    },
+                    {
+                        "x": 490,
+                        "y": 240
+                    }
+                ],
+                "logicFlowType": "bpmn:sequenceFlow"
+            },
+            "key": "Flow_3nat3ri"
+        },
+        {
+            "incoming": [
+                "Activity_3tq5fvu"
+            ],
+            "outgoing": [
+                "Event_34jflja"
+            ],
+            "type": 1,
+            "dockers": [],
+            "properties": {
+                "name": "",
+                "text": "",
+                "startPoint": {
+                    "x": 590,
+                    "y": 240
+                },
+                "endPoint": {
+                    "x": 780,
+                    "y": 240
+                },
+                "pointsList": [{
+                        "x": 590,
+                        "y": 240
+                    },
+                    {
+                        "x": 780,
+                        "y": 240
+                    }
+                ],
+                "logicFlowType": "bpmn:sequenceFlow"
+            },
+            "key": "Flow_0v8uokn"
+        }
+
+    ]
+}
