@@ -1,19 +1,9 @@
-# logicflow_vue_demo
+## 说明
+基于logicflow流程引擎做的一个快速上手的流程设计器demo
 
-> Logic-flow 的vue应用实例  
-> logic Flow 详细内容参照[【文档】](http://logic-flow.org/)
-### 功能
-实例中包含的功能实现：
-- 画布
-- 快捷操作
-- 节点面板
-- 节点自定义
-- 节点菜单
-- 图形下载
+## 截图
+![输入图片说明](5d9772fe40f572d575aed521aa44726.png)
 
-画布：src/components/LF.vue  
-节点自定义： src/components/registerNode  
-节点面板：src/components/NodePanel.vue  
 ## Project setup
 ```
 yarn install
