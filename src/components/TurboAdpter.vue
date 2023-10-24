@@ -24,7 +24,7 @@
     <!-- <h4>更多示例：
       <el-button type="text" @click="goto">LogicFlow</el-button>
     </h4> -->
-    <div v-if="nodeInfo" :key="nodeKey">节点属性{{$data.clickNode}}</div>
+    <div v-if="nodeInfo" :key="nodeKey" style="margin: 20px;">节点属性{{$data.clickNode}}</div>
    
   </div>
 </template>
@@ -219,8 +219,12 @@ export default {
 </script>
 <style>
 .logic-flow-view {
+width: 100vw;
   height: 100vh;
   position: relative;
+}
+.node-panel {
+  left: 12px;
 }
 .demo-title{
   text-align: center;
@@ -228,15 +232,14 @@ export default {
 }
 .demo-control{
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 12px;
+  right: 30px;
   z-index: 2;
 }
 #LF-Turbo{
-  width: calc(100% - 100px);
-  height: 80%;
+  width: calc(100% - 10px);
+  height: 90%;
   outline: none;
-  margin-left: 50px;
 }
 .time-plus{
   cursor: pointer;

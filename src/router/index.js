@@ -10,7 +10,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/LF',
       name: 'LF',
       component: LF
     },
@@ -20,7 +20,7 @@ export default new Router({
       component: Test
     },
     {
-      path: '/TurboAdpter',
+      path: '/',
       name: 'TurboAdpter',
       component: TurboAdpter
     }
